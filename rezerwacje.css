@@ -1,0 +1,32 @@
+body{
+  background-color: #B0C4DE;
+  font-family: Arial;
+}
+ 
+ 
+table{
+    border-collapse: collapse;
+    margin: auto;
+    margin-top:30px;
+    background-color: gold;
+    table-layout: auto;
+    color: black;
+ }
+ 
+   
+ 
+ table td {
+   
+   border: solid orangered 2px;
+   padding: 5px;
+   text-align: center;
+ }
+ 
+ table th {
+   border: solid orangered 2px;
+   font-weight: bold;
+   color: 	black;
+   background-color: goldenrod;
+   
+ }
+ 
