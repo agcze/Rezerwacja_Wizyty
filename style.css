@@ -1,0 +1,105 @@
+header{
+    height:100vh; 
+    background-image:url(../image/bg/Hairdressing\ tools.png);
+    background-position: center;
+    background-size:cover ;
+}
+
+nav{
+    background: transparent;
+    padding-left: 4px;
+   
+}
+ li navbar-nav{
+    padding: 3px;
+}
+
+.container h1{
+color:rgb(214, 123, 37);
+text-align: center;
+font-size:90px;
+margin-top: 15px;
+margin-bottom: 10px;
+text-shadow: black 0.2em 0.1em 0.2em
+
+}
+/*przyciski rezerwacji*/
+.btn{
+    color:gold;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .btn:hover{
+    color: grey;
+  }
+
+  .col-12{
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 20px;
+    
+  }
+
+  /*dostępne usługi*/
+ h1{
+    color: rgb(214, 123, 37);
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;   
+    text-shadow: black 0em 0em 0.1em
+ }
+  
+.nav-link {
+    color: goldenrod;
+    }
+    .nav-link:hover {
+        color: black;
+        }    
+
+
+header button{
+    background: transparent;
+    border:3px solid rgb(214, 123, 37);
+    color: gold;
+    padding: 5px;
+    font-size: 26px;
+  }
+
+  .card img {
+    height: 250px;
+    width: 200px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-group{
+    margin: 10px;
+    padding: 15px;
+  }
+
+  #reservation{
+    background-image: url(../image/bg/Hairdressing\ tools2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #reservation h1{
+    color:rgb(214, 123, 37);
+    font-size: 50px;
+    text-shadow: black 0.1em 0.1em 0.1em
+}
+
+ nav li{
+    cursor: pointer;
+ }
+
+ header button:hover{
+    background-color: rgb(255, 255, 255, 0.2);
+   }
+
+   
