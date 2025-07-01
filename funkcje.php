@@ -1,6 +1,7 @@
 <?php
 require ('admin/connect.php');
 
+
 function dostepneUslugi($dost)
 {
 global $sql;
@@ -18,8 +19,27 @@ WHERE r.Status='Potwierdzona' ";
 }
 
 $wynik=$sql->query($ask);
-$rows=$wynik->fetch_all(MYSQLI_ASSOC); //pobieranie wszyskich elementów
+$rows=$wynik->fetch_all(MYSQLI_ASSOC);
 return $rows;
 }
+
+function admin_panel()
+{
+
+    global $sql;
+      
+    
+
+    $ask2= "SELECT U.Nazwa AS Usługa, CONCAT(K.Imie,' ',K.Nazwisko) AS Klient, 
+    U.Cena, r.DataRezerwacji as Data, r.GodzinaRezerwacji AS Godzina
+    FROM rezerwacje R JOIN klienci K ON R.KlientID=K.id 
+    JOIN uslugi U ON R.UslugaID=U.id"; 
+
+$wynik=$sql->query($ask2);
+$rows=$wynik->fetch_all(MYSQLI_ASSOC);
+return $rows;
+}
+
+
 
 ?>
