@@ -73,17 +73,7 @@ require ("funkcje.php");
       </div>
       <!--karty usług-->
       <div class="row">
-        <!--<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-          <div class="card">
-            <img src="image/usluga/scissors.jpg" class="card-img-top" alt="uslugi">
-            <div class="card-body">
-              <h5 class="card-title text-center">Strzyżenie</h5>
-              <p class="text-center font-weight-bold">od 50zł</p>
-              <button name="rezerwuj" class="btn col-12" onclick="rezerwuj(1)">REZERWUJ</button>
-            </div>
-          </div>
-        </div>-->
-
+        
         <?php
         $rows=dostepneUslugi("");
         foreach ($rows as $r) {
@@ -100,40 +90,7 @@ require ("funkcje.php");
         }
         ?>
 
-        <!--<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-          <div class="card">
-            <img src="image/usluga/Palette.jpg" class="card-img-top" alt="uslugi">
-            <div class="card-body">
-              <h5 class="card-title text-center">Koloryzacja</h5>
-              <p class="text-center font-weight-bold">od 150zł</p>
-              <button name="rezerwuj" class="btn col-12" onclick="rezerwuj(4)">REZERWUJ</button>
-            </div>
-          </div>
-        </div>-->
-
-       
-
-      <!--<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-          <div class="card">
-            <img src="image/usluga/hair.png" class="card-img-top" alt="uslugi">
-            <div class="card-body">
-              <h5 class="card-title text-center">Fryzury okolicznościowe </h5>
-              <p class="text-center font-weight-bold">od 250zł</p>
-              <button name="rezerwuj" class="btn col-12" onclick="rezerwuj(14)">REZERWUJ</button>
-            </div>
-          </div>
-        </div>-->
-
-        <!--<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-          <div class="card">
-            <img src="image/usluga/man_hair.jpg" class="card-img-top" alt="uslugi">
-            <div class="card-body">
-              <h5 class="card-title text-center">Barber</h5>
-              <p class="text-center font-weight-bold">od 40zł</p>
-              <button name="" class="btn col-12" onclick="rezerwuj(15)">REZERWUJ</button>
-            </div>
-          </div>
-        </div>-->
+  
 
 
       </div>
