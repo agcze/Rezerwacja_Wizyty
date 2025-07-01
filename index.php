@@ -35,6 +35,12 @@ require ("funkcje.php");
             <li class="nav-item">
               <a class="nav-link" onclick="smoothScroll('#reservation')">REZERWACJE</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin/logowanie.php">LOGOWANIE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rejestracja.php">UTWÓRZ KONTO</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -67,7 +73,16 @@ require ("funkcje.php");
       </div>
       <!--karty usług-->
       <div class="row">
-       
+        <!--<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+          <div class="card">
+            <img src="image/usluga/scissors.jpg" class="card-img-top" alt="uslugi">
+            <div class="card-body">
+              <h5 class="card-title text-center">Strzyżenie</h5>
+              <p class="text-center font-weight-bold">od 50zł</p>
+              <button name="rezerwuj" class="btn col-12" onclick="rezerwuj(1)">REZERWUJ</button>
+            </div>
+          </div>
+        </div>-->
 
         <?php
         $rows=dostepneUslugi("");
@@ -85,6 +100,40 @@ require ("funkcje.php");
         }
         ?>
 
+        <!--<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+          <div class="card">
+            <img src="image/usluga/Palette.jpg" class="card-img-top" alt="uslugi">
+            <div class="card-body">
+              <h5 class="card-title text-center">Koloryzacja</h5>
+              <p class="text-center font-weight-bold">od 150zł</p>
+              <button name="rezerwuj" class="btn col-12" onclick="rezerwuj(4)">REZERWUJ</button>
+            </div>
+          </div>
+        </div>-->
+
+       
+
+      <!--<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+          <div class="card">
+            <img src="image/usluga/hair.png" class="card-img-top" alt="uslugi">
+            <div class="card-body">
+              <h5 class="card-title text-center">Fryzury okolicznościowe </h5>
+              <p class="text-center font-weight-bold">od 250zł</p>
+              <button name="rezerwuj" class="btn col-12" onclick="rezerwuj(14)">REZERWUJ</button>
+            </div>
+          </div>
+        </div>-->
+
+        <!--<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+          <div class="card">
+            <img src="image/usluga/man_hair.jpg" class="card-img-top" alt="uslugi">
+            <div class="card-body">
+              <h5 class="card-title text-center">Barber</h5>
+              <p class="text-center font-weight-bold">od 40zł</p>
+              <button name="" class="btn col-12" onclick="rezerwuj(15)">REZERWUJ</button>
+            </div>
+          </div>
+        </div>-->
 
 
       </div>
@@ -114,7 +163,10 @@ require ("funkcje.php");
                 <label for="tel">Telefon</label>
                 <input type="text" class="form-control" name="tel" id="tel" placeholder="Wpisz telefon" required>
               </div>
+            
             </div>
+            
+      
 
                 <div class="form-group">
                 <label for="services">Usługa</label>
